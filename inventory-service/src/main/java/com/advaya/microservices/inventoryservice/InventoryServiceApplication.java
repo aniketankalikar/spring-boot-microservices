@@ -17,6 +17,8 @@ public class InventoryServiceApplication {
 	@Bean
 	public CommandLineRunner loadData(InventoryRepository inventoryRepository)
 	{
+
+		inventoryRepository.deleteAll();
 		return args -> {
 
 			Inventory inventory1 = new Inventory();
@@ -25,7 +27,7 @@ public class InventoryServiceApplication {
 
 			Inventory inventory2 = new Inventory();
 			inventory2.setSkuCode("iphone-13-red");
-			inventory2.setQuantity(188);
+			inventory2.setQuantity(0);
 
 			inventoryRepository.save(inventory1);
 			inventoryRepository.save(inventory2);
