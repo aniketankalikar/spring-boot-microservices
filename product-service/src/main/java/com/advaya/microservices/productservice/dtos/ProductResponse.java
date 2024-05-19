@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @Builder
@@ -14,9 +15,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class ProductResponse extends GenericResponse{
 
-    private Long id;
-    private String name;
-    private String description;
-    private BigDecimal price;
+    private List<ProductDTO> products;
+    private ProductDTO product;
 
 }
