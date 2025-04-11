@@ -6,13 +6,10 @@ import com.advaya.userservice.models.Token;
 import com.advaya.userservice.models.User;
 import com.advaya.userservice.repositories.TokenRepository;
 import com.advaya.userservice.repositories.UserRepository;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Calendar;
 import java.util.Optional;
 import java.util.UUID;
 
